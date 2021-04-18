@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>Tile that picture</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  <link rel="stylesheet" href="tyler.css">
+  <title>tyler</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tachyons/css/tachyons.min.css"
+  />
+  <script src="https://unpkg.com/feather-icons"></script>
 
   <body>
-    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <div id="app"></div>
 
-    <div id="app">
-      <tile-page></tile-page>
-    </div>
+    <template id="pattern" class="pa5 flex helvetica">
+      <section class="pa5 flex helvetica">
+        <div class="flex">
+          <a
+            class="no-underline near-white bg-animate bg-near-black hover-bg-gray flex items-center pv3 ph3"
+            title="Go to pattern"
+          >
+            <span class="f6 center ttu tracked"></span>
+            <i class="ml2 w1 h1" data-feather="external-link"></i>
+          </a>
+          <button
+            class="ml2 bg-near-black near-white bg-animate bg-near-black hover-bg-gray bn ph3"
+            title="Preview"
+            onclick="togglePreview(this)"
+          >
+            <div id="icons">
+              <i class="w1 h1" data-feather="eye"></i>
+              <i class="w1 h1 dn" data-feather="eye-off"></i>
+            </div>
+          </button>
 
-    <script src="tyler.js"></script>
-    <script src="app.js"></script>
-    <noscript>
-      Sorry, you need Javascript :(
-    </noscript>
+          <button
+            class="ml2 bg-near-black near-white bg-animate bg-near-black hover-bg-gray bn ph3"
+            title="Download"
+            onclick="downloadBackground(this)"
+          >
+            <i class="w1 h1" data-feather="download"></i>
+          </button>
+        </div>
+      </section>
+    </template>
+
+    <script src="script.js"></script>
+    <noscript>Sorry, you need Javascript :(</noscript>
   </body>
 </html>
