@@ -2,6 +2,8 @@
 
 Preview page for the latest 10 patterns from [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns).
 
+Visit: [https://tyler.ricw.se/](https://tyler.ricw.se/)
+
 Preview as background and download a wallpaper fit to your current screen's resolution. Note that in many cases it will be a better solution to download the original pattern and use a _tile_ setting to fill the screen. In some cases, like Windows 10 lock screen, _tile_ is not supported and this site simplifies that process.
 
 ### License
@@ -15,3 +17,4 @@ For usage of Toptal Subtle Patterns, consult their license. A good start is thei
 - [Toptal Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/)
 - [Tachyons](https://tachyons.io/)
 - [Feather](https://feathericons.com/)
+- [Vercel](https://vercel.com/)
